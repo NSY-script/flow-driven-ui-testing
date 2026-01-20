@@ -1,0 +1,68 @@
+{
+  "valid_user": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "validuser20250106@example.com",
+    "address": "123 Main Street",
+    "city": "New York",
+    "zone_id": "3448",
+    "postcode": "10001",
+    "country_id": "223",
+    "loginname": "johndoe123",
+    "password": "ValidPass123!",
+    "telephone": "1234567890",
+    "description": "Valid user with all required registration fields"
+  },
+  "valid_user_2": {
+    "email": "testuser@example.com",
+    "password": "TestPass456!",
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "telephone": "0987654321",
+    "description": "Additional valid user for testing multiple accounts"
+  },
+  "invalid_credentials": {
+    "email": "validuser@example.com",
+    "password": "WrongPassword123!",
+    "firstname": "John",
+    "lastname": "Doe",
+    "description": "Valid email but incorrect password"
+  },
+  "non_existent_user": {
+    "email": "nonexistent@example.com",
+    "password": "SomePassword123!",
+    "description": "User that does not exist in the system"
+  },
+  "invalid_email_format": {
+    "email": "invalidemail@",
+    "password": "ValidPass123!",
+    "description": "Invalid email format"
+  },
+  "invalid_email_no_domain": {
+    "email": "invalidemail",
+    "password": "ValidPass123!",
+    "description": "Email without domain"
+  },
+  "empty_email": {
+    "email": "",
+    "password": "ValidPass123!",
+    "description": "Empty email field"
+  },
+  "empty_password": {
+    "email": "validuser@example.com",
+    "password": "",
+    "description": "Empty password field"
+  },
+  "short_password": {
+    "email": "validuser@example.com",
+    "password": "123",
+    "description": "Password shorter than minimum length"
+  },
+  "special_characters_email": {
+    "email": "user+test@example.com",
+    "password": "ValidPass123!",
+    "first_name": "Test",
+    "last_name": "User",
+    "description": "Email with special characters (+ sign)"
+  }
+}

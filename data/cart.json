@@ -1,0 +1,79 @@
+{
+  "cart_single_item": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "quantity": 1,
+        "price": 100.00
+      }
+    ],
+    "expected_total": 100.00,
+    "description": "Cart with single product"
+  },
+  "cart_multiple_items": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "quantity": 1,
+        "price": 100.00
+      },
+      {
+        "name": "iPhone",
+        "quantity": 2,
+        "price": 500.00
+      }
+    ],
+    "expected_subtotal": 1100.00,
+    "description": "Cart with multiple products"
+  },
+  "cart_high_quantity": {
+    "products": [
+      {
+        "name": "Palm Treo Pro",
+        "quantity": 99,
+        "price": 150.00
+      }
+    ],
+    "expected_total": 14850.00,
+    "description": "Cart with high quantity items"
+  },
+  "cart_empty": {
+    "products": [],
+    "expected_total": 0.00,
+    "description": "Empty shopping cart"
+  },
+  "cart_quantity_update": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "quantity_original": 1,
+        "quantity_updated": 5,
+        "price": 100.00
+      }
+    ],
+    "expected_total": 500.00,
+    "description": "Cart with quantity update"
+  },
+  "cart_remove_item": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "quantity": 1,
+        "price": 100.00,
+        "action": "remove"
+      }
+    ],
+    "expected_total": 0.00,
+    "description": "Cart after removing all items"
+  },
+  "cart_max_items": {
+    "products": [
+      {
+        "name": "Product 1",
+        "quantity": 999,
+        "price": 10.00
+      }
+    ],
+    "description": "Cart with maximum quantity limit testing"
+  }
+}

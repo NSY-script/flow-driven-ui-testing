@@ -1,0 +1,82 @@
+{
+  "valid_product_1": {
+    "name": "HTC Touch Diamond",
+    "category": "Phone",
+    "price": 100.00,
+    "quantity": 1,
+    "sku": "HTC001",
+    "description": "Standard product for cart and purchase tests"
+  },
+  "valid_product_2": {
+    "name": "iPhone",
+    "category": "Phone",
+    "price": 500.00,
+    "quantity": 1,
+    "sku": "IPH001",
+    "description": "Premium product for checkout tests"
+  },
+  "valid_product_3": {
+    "name": "Palm Treo Pro",
+    "category": "Phone",
+    "price": 150.00,
+    "quantity": 2,
+    "sku": "PLM001",
+    "description": "Product with multiple quantity"
+  },
+  "valid_product_multiple_quantity": {
+    "name": "Sony Ericsson W810",
+    "category": "Phone",
+    "price": 75.00,
+    "quantity": 5,
+    "sku": "SONE001",
+    "description": "Product for bulk purchase testing"
+  },
+  "out_of_stock_product": {
+    "name": "Out of Stock Item",
+    "category": "Phone",
+    "price": 999.00,
+    "quantity": 0,
+    "sku": "OOS001",
+    "description": "Out of stock product for negative testing"
+  },
+  "discontinued_product": {
+    "name": "Discontinued Product",
+    "category": "Phone",
+    "price": 0.00,
+    "quantity": 1,
+    "sku": "DISC001",
+    "description": "Discontinued product for edge case testing"
+  },
+  "high_price_product": {
+    "name": "Expensive Device",
+    "category": "Phone",
+    "price": 9999.99,
+    "quantity": 1,
+    "sku": "EXP001",
+    "description": "High-value product for checkout validation"
+  },
+  "low_price_product": {
+    "name": "Budget Phone",
+    "category": "Phone",
+    "price": 9.99,
+    "quantity": 10,
+    "sku": "BUDG001",
+    "description": "Low-cost item for bulk testing"
+  },
+  "product_with_long_name": {
+    "name": "Product with Very Long Name That Tests UI Rendering and Text Wrapping Functionality",
+    "category": "Phone",
+    "price": 199.99,
+    "quantity": 1,
+    "sku": "LONG001",
+    "description": "Testing display of long product names"
+  },
+  "product_special_characters": {
+    "name": "Product & Device (Test)",
+    "category": "Phone",
+    "price": 150.00,
+    "quantity": 1,
+    "sku": "SPEC001",
+    "description": "Product with special characters in name"
+  }
+}

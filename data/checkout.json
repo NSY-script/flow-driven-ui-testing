@@ -1,0 +1,133 @@
+{
+  "checkout_valid_address": {
+    "billing_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "1234567890",
+      "company": "Example Corp",
+      "address_1": "123 Main Street",
+      "address_2": "Suite 100",
+      "city": "New York",
+      "state": "NY",
+      "postcode": "10001",
+      "country": "United States"
+    },
+    "shipping_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "address_1": "123 Main Street",
+      "address_2": "Suite 100",
+      "city": "New York",
+      "state": "NY",
+      "postcode": "10001",
+      "country": "United States"
+    },
+    "payment_method": "credit_card",
+    "card_details": {
+      "card_name": "John Doe",
+      "card_number": "4111111111111111",
+      "expiry_month": "12",
+      "expiry_year": "2025",
+      "cvv": "123"
+    },
+    "description": "Valid checkout with complete billing and shipping address"
+  },
+  "checkout_same_address": {
+    "billing_address": {
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "phone": "0987654321",
+      "address_1": "456 Oak Avenue",
+      "city": "Los Angeles",
+      "state": "CA",
+      "postcode": "90001",
+      "country": "United States"
+    },
+    "use_same_address_for_shipping": true,
+    "payment_method": "credit_card",
+    "card_details": {
+      "card_name": "Jane Smith",
+      "card_number": "5555555555554444",
+      "expiry_month": "06",
+      "expiry_year": "2026",
+      "cvv": "456"
+    },
+    "description": "Checkout using same address for billing and shipping"
+  },
+  "checkout_missing_billing_address": {
+    "billing_address": {
+      "first_name": "",
+      "last_name": "Doe",
+      "email": "test@example.com",
+      "address_1": "123 Main Street"
+    },
+    "description": "Checkout with missing required billing address fields"
+  },
+  "checkout_invalid_email": {
+    "billing_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "invalidemail@",
+      "address_1": "123 Main Street",
+      "city": "New York",
+      "state": "NY",
+      "postcode": "10001",
+      "country": "United States"
+    },
+    "description": "Checkout with invalid email format"
+  },
+  "checkout_invalid_phone": {
+    "billing_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "phone": "invalid",
+      "address_1": "123 Main Street"
+    },
+    "description": "Checkout with invalid phone number"
+  },
+  "checkout_invalid_postcode": {
+    "billing_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "address_1": "123 Main Street",
+      "postcode": "invalid"
+    },
+    "description": "Checkout with invalid postal code"
+  },
+  "checkout_invalid_card_number": {
+    "billing_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "address_1": "123 Main Street"
+    },
+    "payment_method": "credit_card",
+    "card_details": {
+      "card_number": "1234567890123456",
+      "expiry_month": "12",
+      "expiry_year": "2025",
+      "cvv": "123"
+    },
+    "description": "Checkout with invalid credit card number"
+  },
+  "checkout_expired_card": {
+    "billing_address": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "address_1": "123 Main Street"
+    },
+    "payment_method": "credit_card",
+    "card_details": {
+      "card_number": "4111111111111111",
+      "expiry_month": "01",
+      "expiry_year": "2020",
+      "cvv": "123"
+    },
+    "description": "Checkout with expired credit card"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "update_first_name": {
+    "first_name": "NewFirstName",
+    "last_name": "",
+    "email": "",
+    "phone": "",
+    "description": "Update only first name"
+  },
+  "update_last_name": {
+    "first_name": "",
+    "last_name": "NewLastName",
+    "email": "",
+    "phone": "",
+    "description": "Update only last name"
+  },
+  "update_email": {
+    "first_name": "",
+    "last_name": "",
+    "email": "newemail@example.com",
+    "phone": "",
+    "description": "Update only email address"
+  },
+  "update_phone": {
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "phone": "9876543210",
+    "description": "Update only phone number"
+  },
+  "update_all_fields": {
+    "first_name": "UpdatedFirst",
+    "last_name": "UpdatedLast",
+    "email": "updated@example.com",
+    "phone": "5555555555",
+    "description": "Update all account information fields"
+  },
+  "update_invalid_email": {
+    "email": "invalidemail@",
+    "description": "Update with invalid email format"
+  },
+  "change_password_valid": {
+    "current_password": "ValidPass123!",
+    "new_password": "NewValidPass456!",
+    "confirm_password": "NewValidPass456!",
+    "description": "Change password with valid credentials"
+  },
+  "change_password_incorrect_current": {
+    "current_password": "WrongPassword123!",
+    "new_password": "NewValidPass456!",
+    "confirm_password": "NewValidPass456!",
+    "description": "Change password with incorrect current password"
+  },
+  "change_password_mismatch": {
+    "current_password": "ValidPass123!",
+    "new_password": "NewValidPass456!",
+    "confirm_password": "DifferentPass789!",
+    "description": "Change password with non-matching confirmation"
+  },
+  "change_password_same_as_current": {
+    "current_password": "ValidPass123!",
+    "new_password": "ValidPass123!",
+    "confirm_password": "ValidPass123!",
+    "description": "Change password to same as current"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "add_single_product": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "action": "add"
+      }
+    ],
+    "expected_count": 1,
+    "description": "Add single product to wishlist"
+  },
+  "add_multiple_products": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "action": "add"
+      },
+      {
+        "name": "iPhone",
+        "action": "add"
+      },
+      {
+        "name": "Palm Treo Pro",
+        "action": "add"
+      }
+    ],
+    "expected_count": 3,
+    "description": "Add multiple products to wishlist"
+  },
+  "remove_product": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "action": "add"
+      },
+      {
+        "name": "HTC Touch Diamond",
+        "action": "remove"
+      }
+    ],
+    "expected_count": 0,
+    "description": "Add and then remove product from wishlist"
+  },
+  "duplicate_product": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "action": "add"
+      },
+      {
+        "name": "HTC Touch Diamond",
+        "action": "add"
+      }
+    ],
+    "expected_count": 1,
+    "description": "Adding same product twice should keep only one copy"
+  },
+  "empty_wishlist": {
+    "products": [],
+    "expected_count": 0,
+    "expected_message": "No items in your wishlist",
+    "description": "View empty wishlist"
+  },
+  "move_to_cart": {
+    "products": [
+      {
+        "name": "HTC Touch Diamond",
+        "action": "add"
+      },
+      {
+        "name": "HTC Touch Diamond",
+        "action": "move_to_cart"
+      }
+    ],
+    "expected_wishlist_count": 0,
+    "expected_cart_count": 1,
+    "description": "Move product from wishlist to cart"
+  },
+  "share_wishlist": {
+    "recipients": ["friend1@example.com", "friend2@example.com"],
+    "message": "Check out my favorite products!",
+    "description": "Share wishlist with other users"
+  }
+}

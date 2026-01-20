@@ -1,0 +1,75 @@
+{
+  "search_keyword_single_result": {
+    "keyword": "HTC Touch Diamond",
+    "expected_results": 1,
+    "expected_product_name": "HTC Touch Diamond",
+    "description": "Search term returning exactly one product"
+  },
+  "search_keyword_multiple_results": {
+    "keyword": "Phone",
+    "expected_results": 10,
+    "expected_includes": ["HTC Touch Diamond", "iPhone", "Palm Treo Pro"],
+    "description": "Search term returning multiple products"
+  },
+  "search_keyword_no_results": {
+    "keyword": "NonexistentProductXYZ",
+    "expected_results": 0,
+    "description": "Search term with no matching products"
+  },
+  "search_empty_keyword": {
+    "keyword": "",
+    "expected_results": 0,
+    "description": "Empty search string"
+  },
+  "search_special_characters": {
+    "keyword": "@#$%^&*()",
+    "expected_results": 0,
+    "description": "Search with special characters"
+  },
+  "search_numeric_only": {
+    "keyword": "12345",
+    "expected_results": 0,
+    "description": "Search with only numbers"
+  },
+  "search_single_character": {
+    "keyword": "a",
+    "expected_results": 10,
+    "description": "Single character search term"
+  },
+  "search_case_sensitivity": {
+    "keyword": "iphone",
+    "expected_results": 1,
+    "expected_includes": ["iPhone"],
+    "description": "Verify case-insensitive search"
+  },
+  "search_partial_match": {
+    "keyword": "HTC",
+    "expected_results": 1,
+    "description": "Partial product name search"
+  },
+  "search_very_long_keyword": {
+    "keyword": "This is a very long search query that tests the search functionality with extended input",
+    "expected_results": 0,
+    "description": "Very long search string"
+  },
+  "search_with_spaces": {
+    "keyword": "   spaces   ",
+    "description": "Search keyword with extra spaces"
+  },
+  "search_filter_by_price_low": {
+    "keyword": "Phone",
+    "price_range": {
+      "min": 0,
+      "max": 100
+    },
+    "description": "Search with price filter - low range"
+  },
+  "search_filter_by_price_high": {
+    "keyword": "Phone",
+    "price_range": {
+      "min": 100,
+      "max": 1000
+    },
+    "description": "Search with price filter - high range"
+  }
+}
