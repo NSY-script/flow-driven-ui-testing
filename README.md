@@ -361,8 +361,8 @@ open reports/screenshots/                      # Failure evidence
 - 🚀 [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Quick commands
 - ⚙️ [config/README.md](config/README.md) - Configuration
 - 📧 Contact: najibsunusi19@gmail.com
-
----
+- 📱Phone: +2348160471369
+- LinkedIn: 
 
 ## 📄 License
 
