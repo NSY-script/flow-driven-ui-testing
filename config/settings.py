@@ -1,9 +1,3 @@
-"""
-Project-level settings and configuration.
-
-Centralizes all project constants, environment variables, paths, and defaults.
-Supports multiple environments (dev, staging, prod) and CI/CD pipelines.
-"""
 
 import os
 from pathlib import Path
