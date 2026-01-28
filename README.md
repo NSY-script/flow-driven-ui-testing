@@ -1,6 +1,6 @@
 # 🎯 Automation Test Store - Selenium Framework
 
-A production-grade, SDET-level test automation framework for [Automation Test Store](https://www.automationteststore.com). Built with modern best practices, comprehensive test coverage, and enterprise-ready CI/CD integration.
+A flow-driven, boundary-enforced UI automation framework built with Selenium and Pytest, designed for scalable end-to-end testing in cloud-native CI/CD environments.
 
 ---
 
@@ -371,3 +371,4 @@ MIT License - See LICENSE file
 ---
 
 **Last Updated**: January 28, 2026 | **Version**: 1.0.0 | **Status**: Production Ready ✅
+
