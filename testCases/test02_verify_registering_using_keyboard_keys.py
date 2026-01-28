@@ -1,21 +1,3 @@
-"""
-Test: Verify Registration Using Keyboard Keys
-
-Validates that users can successfully register using keyboard navigation
-(Tab key for field navigation and Enter key for form submission).
-This ensures the application is fully accessible via keyboard input.
-
-Test Scenario:
-    1. Navigate to registration page
-    2. Fill all mandatory fields using Tab key navigation
-    3. Submit form using Enter key
-    4. Verify success page is displayed
-
-Expected Result:
-    - Registration succeeds using keyboard-only navigation
-    - Success confirmation page is displayed
-    - Timestamp-based unique email prevents duplicates
-"""
 
 import json
 import pytest
@@ -30,30 +12,6 @@ from flows.register_flow import RegisterFlow
 @pytest.mark.regression
 @pytest.mark.flaky(reruns=2, reruns_delay=2)
 def test_verify_registering_using_keyboard_keys(browser_driver):
-    """
-    Test: Registration Using Keyboard Navigation
-    
-    Verifies that user registration succeeds when using keyboard-only navigation
-    (Tab key for field navigation, Enter key for form submission). Tests the
-    application's accessibility compliance and keyboard support.
-    
-    Test Flow:
-        1. Load test data from configuration
-        2. Navigate to registration page
-        3. Fill all mandatory fields using Tab key navigation
-        4. Submit registration form using Enter key
-        5. Verify registration success page is displayed
-    
-    Assertions:
-        - Registration method returns True (success)
-        - No accessibility issues during keyboard navigation
-        - Success page is displayed after keyboard submission
-    
-    Markers:
-        - @pytest.mark.ui: UI interaction test
-        - @pytest.mark.regression: Core functionality test
-        - @pytest.mark.flaky: May need retries due to timing
-    """
     # ========== Setup ==========
     # Load test data from configuration
     with open(USERS_DATA_FILE, 'r') as file:
