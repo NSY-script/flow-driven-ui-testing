@@ -1,16 +1,3 @@
-"""
-Test file for verifying user registration with newsletter subscription.
-
-This test file validates the business workflow of registering a new user
-with newsletter subscription enabled using ONLY the RegisterFlow class
-and its verify_registering_with_newsletter_subscription method.
-
-Architecture:
-- Tests are isolated to the FLOW layer
-- Browser setup handled by pytest fixtures
-- Test data injected via fixtures
-- No direct Page object or Selenium API usage in tests
-"""
 
 import json
 import pytest
@@ -25,22 +12,6 @@ from flows.register_flow import RegisterFlow
 @pytest.mark.regression
 @pytest.mark.register
 def test_verify_registering_with_newsletter_subscription(driver):
-    """
-    Test registration with newsletter subscription enabled.
-
-    This test validates the RegisterFlow.verify_registering_with_newsletter_subscription
-    method by executing the complete registration workflow with newsletter
-    subscription option enabled and verifying successful account creation.
-
-    Args:
-        driver: WebDriver fixture for browser automation
-
-    Expected Outcome:
-        - Registration flow completes successfully
-        - User account is created with newsletter subscription enabled
-        - Success status is returned by the flow method
-        - Success page displays "Your Account Has Been Created!"
-    """
     # Arrange: Load valid test user data from configuration
     with open(USERS_DATA_FILE, 'r') as file:
         users_data = json.load(file)
