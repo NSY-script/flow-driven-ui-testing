@@ -360,7 +360,7 @@ open reports/screenshots/                      # Failure evidence
 - 📖 [FRAMEWORK_GUIDE.md](FRAMEWORK_GUIDE.md) - Detailed documentation
 - 🚀 [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Quick commands
 - ⚙️ [config/README.md](config/README.md) - Configuration
-- 📧 Contact: najib@example.com
+- 📧 Contact: najibsunusi19@gmail.com
 
 ---
 
