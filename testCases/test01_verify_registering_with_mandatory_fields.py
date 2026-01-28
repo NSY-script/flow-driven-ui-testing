@@ -1,15 +1,3 @@
-"""
-Test file for verifying user registration with mandatory fields.
-
-This test file validates the business workflow of registering a new user
-using ONLY the RegisterFlow class and its verify_registering_with_mandatory_fields method.
-
-Architecture:
-- Tests are isolated to the FLOW layer
-- Browser setup handled by pytest fixtures
-- Test data injected via fixtures
-- No direct Page object or Selenium API usage in tests
-"""
 
 import json
 import pytest
@@ -26,21 +14,7 @@ from flows.register_flow import RegisterFlow
 @pytest.mark.regression
 @pytest.mark.register
 def test_verify_registering_with_mandatory_fields(driver):
-    """
-    Test successful registration with valid mandatory fields.
-
-    This test validates the RegisterFlow.verify_registering_with_mandatory_fields
-    method by executing the complete registration workflow with only mandatory
-    fields (email and password) and verifying successful account creation.
-
-    Args:
-        driver: WebDriver fixture for browser automation
-
-    Expected Outcome:
-        - Registration flow completes successfully
-        - User account is created with valid email and password
-        - Success status is returned by the flow method
-    """
+  
     # Arrange: Load valid test user data from configuration
     import time
     with open(USERS_DATA_FILE, 'r') as file:
